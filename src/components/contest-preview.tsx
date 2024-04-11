@@ -1,6 +1,6 @@
-import ContestList from "./contest-list";
+import * as React from "react";
 
-const ContestPreview = ({ contest }) => {
+const ContestPreview: React.FC <{contest: object}> = ({ contest }) => {
     return (
         <div className="contest-preview">
             <div className="category"> {contest.categoryName} </div>
